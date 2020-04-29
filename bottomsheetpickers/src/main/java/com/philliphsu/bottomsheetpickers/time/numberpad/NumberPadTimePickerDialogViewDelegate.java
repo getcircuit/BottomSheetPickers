@@ -24,8 +24,6 @@ final class NumberPadTimePickerDialogViewDelegate implements INumberPadTimePicke
     private final @NonNull NumberPadTimePicker mTimePicker;
     private final @Nullable OnTimeSetListener mTimeSetListener;
     private final INumberPadTimePicker.DialogPresenter mPresenter;
-    // Dummy TimePicker Passed to onTimeSet() callback.
-    private final TimePicker mDummy;
 
     private View mOkButton;
 
@@ -39,7 +37,6 @@ final class NumberPadTimePickerDialogViewDelegate implements INumberPadTimePicke
         mTimePicker = checkNotNull(timePicker);
         mOkButton = okButton;
         mTimeSetListener = listener;
-        mDummy = new TimePicker(context);
 
         // TODO: If this model is needed by other classes, make it a singleton.
         final LocaleModel localeModel = new LocaleModel(context);
@@ -120,7 +117,7 @@ final class NumberPadTimePickerDialogViewDelegate implements INumberPadTimePicke
     @Override
     public void setResult(int hour, int minute) {
         if (mTimeSetListener != null) {
-            mTimeSetListener.onTimeSet(mDummy, hour, minute);
+            mTimeSetListener.onTimeSet(null, hour, minute);
         }
     }
 
