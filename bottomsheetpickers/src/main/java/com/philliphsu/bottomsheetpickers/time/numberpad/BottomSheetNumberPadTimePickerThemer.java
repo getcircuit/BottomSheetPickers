@@ -1,7 +1,8 @@
 package com.philliphsu.bottomsheetpickers.time.numberpad;
 
 import android.content.res.ColorStateList;
-import android.support.annotation.ColorInt;
+
+import androidx.annotation.ColorInt;
 
 /**
  * Adds {@link NumberPadTimePicker#LAYOUT_BOTTOM_SHEET bottom sheet} theming APIs

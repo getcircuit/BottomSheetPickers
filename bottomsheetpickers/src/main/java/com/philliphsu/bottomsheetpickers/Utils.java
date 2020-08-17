@@ -30,15 +30,16 @@ import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.RippleDrawable;
 import android.os.Build;
-import android.support.annotation.AttrRes;
-import android.support.annotation.ColorInt;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
-import android.support.v4.graphics.drawable.DrawableCompat;
 import android.text.format.Time;
 import android.view.View;
 import android.widget.ImageView;
+
+import androidx.annotation.AttrRes;
+import androidx.annotation.ColorInt;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.core.graphics.drawable.DrawableCompat;
 
 import java.util.Calendar;
 
@@ -65,7 +66,7 @@ public class Utils {
     public static final Typeface SANS_SERIF_THIN_BOLD;
 
     static {
-        SANS_SERIF_LIGHT = isJellybeanOrLater() ? Typeface.create("sans-serif-light", 0) : null;
+        SANS_SERIF_LIGHT = Typeface.create("sans-serif-light", Typeface.NORMAL);
 
         if (checkApiLevel(Build.VERSION_CODES.LOLLIPOP)) {
             SANS_SERIF_LIGHT_BOLD = Typeface.create(SANS_SERIF_LIGHT, Typeface.BOLD);
@@ -75,10 +76,6 @@ public class Utils {
             SANS_SERIF_THIN_BOLD = SANS_SERIF_LIGHT != null ? SANS_SERIF_LIGHT : Typeface.DEFAULT;
             SANS_SERIF_LIGHT_BOLD = Typeface.DEFAULT;
         }
-    }
-
-    public static boolean isJellybeanOrLater() {
-        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN;
     }
 
     public static boolean checkApiLevel(int versionCode) {
@@ -91,7 +88,7 @@ public class Utils {
      */
     @SuppressLint("NewApi")
     public static void tryAccessibilityAnnounce(View view, CharSequence text) {
-        if (isJellybeanOrLater() && view != null && text != null) {
+        if (view != null && text != null) {
             view.announceForAccessibility(text);
         }
     }

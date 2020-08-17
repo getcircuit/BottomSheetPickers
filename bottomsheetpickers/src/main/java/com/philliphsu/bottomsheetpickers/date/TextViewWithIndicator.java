@@ -1,10 +1,8 @@
 package com.philliphsu.bottomsheetpickers.date;
 
 import android.content.Context;
-import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
-import android.widget.TextView;
-
+import androidx.core.content.ContextCompat;
 import com.philliphsu.bottomsheetpickers.R;
 import com.philliphsu.bottomsheetpickers.Utils;
 
@@ -16,7 +14,7 @@ import com.philliphsu.bottomsheetpickers.Utils;
  * we don't need to change much code in {@link YearPickerView} if we ever
  * revert to using the latter subtype.
  */
-abstract class TextViewWithIndicator extends TextView {
+abstract class TextViewWithIndicator extends androidx.appcompat.widget.AppCompatTextView {
 
     int mDefaultTextColor;
 

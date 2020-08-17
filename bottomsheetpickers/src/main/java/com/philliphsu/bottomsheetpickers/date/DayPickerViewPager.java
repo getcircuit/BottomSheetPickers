@@ -19,10 +19,11 @@ package com.philliphsu.bottomsheetpickers.date;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+
+import androidx.viewpager.widget.ViewPager;
 
 import com.philliphsu.bottomsheetpickers.Utils;
 

@@ -3,6 +3,7 @@ package com.philliphsu.bottomsheetpickers.time.numberpad;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.TextView;
 
 public class NumberPadView extends GridPickerView {
@@ -47,13 +48,13 @@ public class NumberPadView extends GridPickerView {
         }
     }
 
-    void setOnNumberKeyClickListener(OnClickListener l) {
+    void setOnNumberKeyClickListener(View.OnClickListener l) {
         for (TextView tv : mNumberButtons) {
             tv.setOnClickListener(l);
         }
     }
 
-    void setOnAltKeyClickListener(OnClickListener l) {
+    void setOnAltKeyClickListener(View.OnClickListener l) {
         mAltButtons[0].setOnClickListener(l);
         mAltButtons[1].setOnClickListener(l);
     }

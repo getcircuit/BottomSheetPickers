@@ -17,12 +17,13 @@
 package com.philliphsu.bottomsheetpickers.time.grid;
 
 import android.content.Context;
-import android.support.annotation.ColorInt;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.ViewAnimator;
+
+import androidx.annotation.ColorInt;
 
 import com.philliphsu.bottomsheetpickers.R;
 import com.philliphsu.bottomsheetpickers.Utils;

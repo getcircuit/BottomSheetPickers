@@ -1,11 +1,12 @@
 package com.philliphsu.bottomsheetpickers.time.numberpad;
 
 import android.content.Context;
-import android.support.annotation.IdRes;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.GridLayout;
 import android.util.AttributeSet;
 import android.widget.TextView;
+
+import androidx.annotation.IdRes;
+import androidx.annotation.Nullable;
+import androidx.gridlayout.widget.GridLayout;
 
 import com.philliphsu.bottomsheetpickers.R;
 
@@ -14,7 +15,8 @@ import com.philliphsu.bottomsheetpickers.R;
  */
 public class GridPickerView extends GridLayout {
 
-    private static final @IdRes int[] TEXTVIEW_IDS = {
+    private static final @IdRes
+    int[] TEXTVIEW_IDS = {
             R.id.bsp_text0,  R.id.bsp_text1,   R.id.bsp_text2,
             R.id.bsp_text3,  R.id.bsp_text4,   R.id.bsp_text5,
             R.id.bsp_text6,  R.id.bsp_text7,   R.id.bsp_text8,

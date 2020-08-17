@@ -9,17 +9,18 @@ import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.os.Build;
-import android.support.annotation.ColorInt;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.annotation.StyleableRes;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.graphics.drawable.DrawableCompat;
-import android.support.v7.widget.GridLayout;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.ColorInt;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.StyleableRes;
+import androidx.core.graphics.drawable.DrawableCompat;
+import androidx.gridlayout.widget.GridLayout;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.philliphsu.bottomsheetpickers.R;
 
 import static android.view.View.INVISIBLE;
@@ -68,7 +69,7 @@ final class NumberPadTimePickerBottomSheetComponent extends NumberPadTimePicker.
     NumberPadTimePickerBottomSheetComponent(NumberPadTimePicker timePicker, Context context,
             AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(timePicker, context, attrs, defStyleAttr, defStyleRes);
-        mOkButton = (FloatingActionButton) timePicker.findViewById(R.id.bsp_ok_button);
+        mOkButton = timePicker.findViewById(R.id.bsp_ok_button);
         
         final TypedArray timePickerAttrs = context.obtainStyledAttributes(attrs,
                 R.styleable.BSP_NumberPadTimePicker, defStyleAttr, defStyleRes);

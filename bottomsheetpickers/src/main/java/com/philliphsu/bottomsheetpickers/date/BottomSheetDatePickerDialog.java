@@ -15,8 +15,7 @@
  */
 
 package com.philliphsu.bottomsheetpickers.date;
-
-import android.support.annotation.ColorInt;
+import androidx.annotation.ColorInt;
 
 import java.util.Calendar;
 

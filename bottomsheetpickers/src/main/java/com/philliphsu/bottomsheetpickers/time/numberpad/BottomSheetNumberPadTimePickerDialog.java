@@ -4,16 +4,17 @@ import android.app.TimePickerDialog.OnTimeSetListener;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.annotation.StyleRes;
-import android.support.design.widget.BottomSheetBehavior;
-import android.support.design.widget.BottomSheetDialog;
-import android.support.design.widget.FloatingActionButton;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.StyleRes;
+
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.philliphsu.bottomsheetpickers.R;
 
 class BottomSheetNumberPadTimePickerDialog extends BottomSheetDialog {
@@ -23,7 +24,7 @@ class BottomSheetNumberPadTimePickerDialog extends BottomSheetDialog {
     private final BottomSheetBehavior<? extends View> mBottomSheetBehavior;
 
     public BottomSheetNumberPadTimePickerDialog(@NonNull Context context,
-            @Nullable OnTimeSetListener listener, boolean is24HourMode) {
+                                                @Nullable OnTimeSetListener listener, boolean is24HourMode) {
         this(context, 0, listener, is24HourMode);
     }
 

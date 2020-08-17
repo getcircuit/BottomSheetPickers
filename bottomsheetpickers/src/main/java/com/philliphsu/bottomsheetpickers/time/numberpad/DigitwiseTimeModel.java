@@ -1,6 +1,7 @@
 package com.philliphsu.bottomsheetpickers.time.numberpad;
 
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import java.util.Arrays;
 
@@ -14,7 +15,8 @@ final class DigitwiseTimeModel {
 
     private final int[] mDigits = new int[MAX_DIGITS];
 
-    private final @Nullable OnInputChangeListener mListener;
+    private final @Nullable
+    OnInputChangeListener mListener;
 
     private int mCount;
 

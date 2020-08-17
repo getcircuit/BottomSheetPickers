@@ -19,11 +19,12 @@ package com.philliphsu.bottomsheetpickers.date;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.v4.view.PagerAdapter;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
+
+import androidx.viewpager.widget.PagerAdapter;
 
 import com.philliphsu.bottomsheetpickers.Utils;
 import com.philliphsu.bottomsheetpickers.date.MonthView.OnDayClickListener;

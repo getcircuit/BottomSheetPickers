@@ -1,6 +1,6 @@
 package com.philliphsu.bottomsheetpickers.time.numberpad;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import static com.philliphsu.bottomsheetpickers.time.numberpad.Preconditions.checkNotNull;
 import static com.philliphsu.bottomsheetpickers.time.numberpad.AmPmState.AM;

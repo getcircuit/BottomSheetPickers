@@ -1,6 +1,6 @@
 package com.philliphsu.bottomsheetpickers.time.numberpad;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 interface INumberPadTimePicker {
     interface View {

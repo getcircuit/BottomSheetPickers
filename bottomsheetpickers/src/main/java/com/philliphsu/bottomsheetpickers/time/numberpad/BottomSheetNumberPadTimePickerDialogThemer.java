@@ -2,8 +2,9 @@ package com.philliphsu.bottomsheetpickers.time.numberpad;
 
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.ColorInt;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.ColorInt;
+import androidx.annotation.NonNull;
 
 /**
  * Interface through which a {@link NumberPadTimePicker} contained in

@@ -1,5 +1,6 @@
 package com.philliphsu.bottomsheetpickers.date;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Canvas;
@@ -10,7 +11,7 @@ import android.util.TypedValue;
 import com.philliphsu.bottomsheetpickers.R;
 import com.philliphsu.bottomsheetpickers.Utils;
 
-import static android.support.v4.content.ContextCompat.getColor;
+import static androidx.core.content.ContextCompat.getColor;
 
 /**
  * A derivative of {@link TextViewWithCircularIndicator} for use in {@link
@@ -50,6 +51,7 @@ public class TextViewWithHighlightIndicator extends TextViewWithIndicator {
         setTypeface(drawHighlight ? Utils.SANS_SERIF_LIGHT_BOLD : Typeface.DEFAULT);
     }
 
+    @SuppressLint("GetContentDescriptionOverride")
     @Override
     public CharSequence getContentDescription() {
         CharSequence itemText = getText();
