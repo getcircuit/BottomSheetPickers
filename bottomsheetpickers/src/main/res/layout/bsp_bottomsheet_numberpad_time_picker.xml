@@ -19,8 +19,8 @@
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/bsp_ok_button"
-            app:layout_column="1"
-            app:layout_gravity="center"
+            android:layout_column="1"
+            android:layout_gravity="center"
             app:srcCompat="@drawable/nptp_ic_done_24dp"
             style="@style/BSP_NumberPadTimePicker_FabStyle" />
 

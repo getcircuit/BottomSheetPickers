@@ -12,13 +12,13 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridLayout;
 
 import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StyleableRes;
 import androidx.core.graphics.drawable.DrawableCompat;
-import androidx.gridlayout.widget.GridLayout;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.philliphsu.bottomsheetpickers.R;
