@@ -30,8 +30,13 @@ final class NumberPadTimePickerDialogPresenter extends NumberPadTimePickerPresen
 
     @Override
     public void onOkButtonClick() {
-        mView.setResult(mTimeParser.getHour(mAmPmState), mTimeParser.getMinute(mAmPmState));
-        mView.cancel();
+        try {
+            mView.setResult(mTimeParser.getHour(mAmPmState), mTimeParser.getMinute(mAmPmState));
+            mView.cancel();
+        } catch (IllegalStateException e) {
+            // rare crash happening because they manage to press the button without entering valid time
+            // just catch it and wait for them to enter
+        }
     }
 
     @Override
