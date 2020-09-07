@@ -48,6 +48,3 @@ dependencies {
     implementation 'com.google.android.material:material:1.2.0'
     implementation "androidx.customview:customview:1.1.0"
 }
-
-apply from: '../install.gradle'
-apply from: '../bintray.gradle'
